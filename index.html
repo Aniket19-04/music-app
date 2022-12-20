@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="topl">Spotify-Web Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utils.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav flex bg-violet">
+            <i class="fa-brands fa-3x fa-spotify"></i>
+            <h1 class="font-bold">Spotify</h1>
+            <ul id="menuList">
+                <li><button><a href="/index.html">Home</a></button></li>
+                <li><button><a href="/library.html">Library</a></button></li>
+            </ul>
+            <form class="search2" method="get" action="library.html">
+                <input class="search2" type="text" name="serach_bar" size="31" maxlength="255" value=""
+                    style="left: 396px; top: 153px; width: 293px; height: 26px;" />
+                <input class="search1" type="submit" name="submition" value="Search"
+                    style=" padding-bottom:20px; left: 691px; top: 153px; height: 23px;color: black;border-radius: 30px; width: 60px; background-color: red;">
+                <input class="search2" type="hidden" name="sitesearch" value="default.html" />
+                <img src="media/menu abr.png" style="height:40px" position="right" class="menu-icon"
+                    onclick="togglemenu()" alt="">
+        </div>
+        <div class="content">
+            <div class="left-col">
+                <h1>The Real Taste<br> Of Your<br> Favourite<br> Downloaded Music</h1>
+            </div>
+        </div>
+    </div>
+    <div class="bottom justify-sb item-center">
+        <p>Click here to listen</p>
+        <img src="media/play1.png" style="height:40px" id="icon1" alt="">
+    </div>
+
+    <script>
+        var mySong = document.getElementById("mySong");
+        var icon1 = document.getElementById("icon1");
+        icon1.onclick = function () {
+            if (mySong.paused) {
+                mySong.play();
+                icon1.src = "media/pause1.png";
+            } else {
+                mySong.pause();
+                icon1.src = "media/play1.png";
+            }
+        }
+        var mySong = document.getElementById("mySong");
+        var search = document.getElementById("search");
+        search.onclick = mySong.attributes("mySong");
+        var menuList = document.getElementById("menuList");
+        menuList.style.maxHeight = "0px";
+        function togglemenu() {
+            if (menuList.style.maxHeight = "0px") {
+                menuList.style, maxHeight = "130px";
+            } else {
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/1542182e6e.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

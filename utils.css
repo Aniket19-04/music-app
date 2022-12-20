@@ -1,0 +1,86 @@
+.bg-violet {
+    background-color: rgb(71, 22, 71);
+}
+
+.flex {
+    display: flex;
+}
+
+.jsutify-c {
+    justify-content: center;
+}
+
+.jsutify-sb {
+    justify-content: space-between;
+}
+.logo {
+    width: 140px;
+    cursor: pointer;
+}
+
+.btn {
+    cursor: pointer;
+    color: rgb(135, 44, 135);
+}
+.btnh{
+    cursor: pointer;
+    color: rgb(134, 8, 8);
+    border-radius: 100px;
+    width: 7%;
+}
+.item-center {
+    text-align: center;
+}
+
+.font-bold {
+    font-weight: 400;
+}
+
+@keyframes animate {
+
+    0%,
+    100% {
+        filter: hue-rotate(0deg);
+    }
+
+    50% {
+        filter: hue-rotate(0deg);
+    }
+}
+
+.songItem {
+    width: 100%;
+    padding: 4px;
+    border-radius: 40px;
+}
+
+.songItem img {
+    display: inline-block;
+    width: 10%;
+    height: 10%;
+    border-radius: 25px;
+    justify-content: space-between;
+    align-items: center;
+}
+.searchbox {  
+    float: left;  
+    }  
+    input[type=text] {  
+    padding: 6px;  
+    margin-top: 8px;  
+    font-size: 17px;  
+    border: none;  
+    }  
+    .searchbox button {  
+      
+    padding: 8px;  
+    margin-top: 10px;  
+    margin-left: 10px;  
+    background: orange;  
+    font-size: 20px;  
+    border: none;  
+    cursor: pointer;  
+    }  
+    .searchbox button:hover {  
+    background: blue;  
+    }  
